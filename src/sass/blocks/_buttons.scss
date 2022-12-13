@@ -1,0 +1,21 @@
+.button {
+    border: none;
+    display: block;
+    background-color: $main-color;
+    border-radius: 45px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-align: center;
+    &_middle {
+        width: 160px;
+        height: 45px;
+        font-size: 13px;
+        font-weight: 400;
+    }
+    &_big {
+        width: 230px;
+        height: 57px;
+        font-size: 15px;
+        font-weight: 700;
+    }
+}
