@@ -79,7 +79,7 @@ $(document).ready(function() {
     });
 
     $('.modal__close').on('click', function() {
-        $('.overlay').fadeOut('slow');
+        $('.overlay, #thanks').fadeOut('slow');
     });
 
     $('form').submit(function(e) {
@@ -95,7 +95,7 @@ $(document).ready(function() {
           data: $(this).serialize()
         }).done(function() {
           $(this).find("input").val("");
-          $('#consultation, #order').fadeOut();
+          $('#call').fadeOut();
           $('.overlay, #thanks').fadeIn('slow');
           $('form').trigger('reset');
         });
