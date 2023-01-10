@@ -66,8 +66,8 @@ $(document).ready(function() {
         speed: 500,
         fade: true,
         slidesToShow: 1,
-        prevArrow: '<button type="button" class="slick-prev"><img src="../icons/left.png"></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="../icons/right.png"></button>',
+        prevArrow: '<button type="button" class="slick-prev"><img src="icons/left.png"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="icons/right.png"></button>',
     });
 
     $('input[name=phone]').mask("+7 (999) 999-99-99");
