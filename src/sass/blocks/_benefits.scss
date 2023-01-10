@@ -1,0 +1,34 @@
+.benefits {
+    min-height: 590px;
+    padding: 60px 0 86px 0;
+    background-color: rgb(243, 243, 243);
+    top: 692px;
+    &__wrapper {
+        display: grid;
+        justify-content: center;
+        margin-top: 30px;
+        grid-template: repeat(4, minmax(79px, auto)) / repeat(2, minmax(auto, 533px));
+        grid-auto-rows: minmax(79px, auto);
+        gap: 35px 62px;
+    }
+    &__item {
+        display: grid;
+        grid-template: 1fr / 64px calc(100% - 77px);
+        column-gap: 13px;
+    }
+    &__descr {
+        &-title {
+            font-size: 16px;
+            color: $main-color;
+            font-weight: 700;
+        }
+        &-text {
+            font-size: 14px;
+            font-weight: 300;
+            margin-top: 8px;
+        }
+    }
+    &__icon {
+        align-self: center;
+    }
+}

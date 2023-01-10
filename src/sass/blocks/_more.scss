@@ -1,0 +1,36 @@
+.more {
+    min-height: 620px;
+    padding: 51px 0 57px 0;
+    &__wrapper {
+        margin-top: 37px;
+        display: grid;
+        grid-template: auto / repeat(3, 360px);
+        grid-auto-rows: auto;
+        gap: 50px 30px;
+    }
+    &__descr {
+        margin-top: 28px;
+        width: 360px;
+        &-title {
+            font-size: 18px;
+            color: $main-color;
+            font-weight: 700;
+            text-align: center;
+        }
+        &-text {
+            font-size: 14px;
+            font-weight: 300;
+            margin-top: 8px;
+            text-align: justify;
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+    &__img {
+        width: 360px;
+        height: 210px;
+        object-fit: cover;
+    }
+}

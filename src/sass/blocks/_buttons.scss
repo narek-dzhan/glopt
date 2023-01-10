@@ -6,16 +6,33 @@
     color: rgb(255, 255, 255);
     text-transform: uppercase;
     text-align: center;
-    &_middle {
+    &_small {
         width: 160px;
         height: 45px;
-        font-size: 13px;
+        font-size: 12px;
         font-weight: 400;
+    }
+    &_middle {
+        width: 180px;
+        height: 45px;
+        font-size: 12px;
+        font-weight: 400;
+        display: block;
+        margin: 0 auto;
     }
     &_big {
         width: 230px;
         height: 57px;
         font-size: 15px;
         font-weight: 700;
+    }
+    &_long {
+        width: 268px;
+        height: 45px;
+        font-size: 12px;
+        font-weight: 400;
+        display: block;
+        margin: 0 auto;
+        margin-top: 20px;
     }
 }

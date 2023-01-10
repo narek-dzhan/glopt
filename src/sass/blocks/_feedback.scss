@@ -1,0 +1,53 @@
+.feedback {
+    display: block;
+    min-height: 470px;
+    padding: 51px 0 51px 0;
+    &__item {
+        width: 600px;
+    }
+    &__slider {
+        display: block;
+        margin: 0 auto;
+        width: 600px;
+        margin-top: 34px;
+        position: relative;
+        &-photo {
+            width: 114px;
+            height: 114px;
+            object-fit: cover;
+            border-radius: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+        &-name {
+            margin-top: 18px;
+            font-size: 18px;
+            font-weight: 700;
+            text-align: center;
+        }
+        &-text {
+            margin-top: 15px;
+            font-size: 14px;
+            font-weight: 300;
+            text-align: center;
+        }
+    }
+}
+
+.slick {
+    &-prev, &-next {
+        width: 46px;
+        z-index: 1;
+        position: absolute;
+        top: 35px;
+        border: none;
+        background: none;
+
+    }
+    &-prev {
+        left: 180px;
+    }
+    &-next {
+        right: 180px;
+    }
+}

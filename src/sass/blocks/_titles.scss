@@ -1,0 +1,29 @@
+.title {
+    color: rgb(46, 46, 46);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 0;
+    &_main {
+        font-size: 26px;
+    }
+    &_sub {
+        font-size: 21px;
+        text-align: center;
+        font-weight: 300;
+        margin-top: 13px;
+        text-transform: initial;
+    }
+    &_white {
+        color: #fff;
+    }
+    &_upper {
+        text-transform: uppercase;
+    }
+}
+.divider {
+    width: 148px;
+    height: 1px;
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: $main-color;
+}

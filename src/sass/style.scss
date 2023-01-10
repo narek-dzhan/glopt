@@ -1,5 +1,6 @@
 @import "libs/bootstrap-reboot.min";
 @import "libs/fonts";
+@import "libs/slick";
 
 @import "base/variables";
 
@@ -19,5 +20,17 @@
 @import "blocks/buttons";
 @import "blocks/benefits";
 @import "blocks/titles";
+@import "blocks/more";
+@import "blocks/agent";
+@import "blocks/price";
+@import "blocks/consultation";
+@import "blocks/managers";
+@import "blocks/scheme";
+@import "blocks/feedback";
+@import "blocks/questions";
+@import "blocks/map";
+@import "blocks/footer";
+@import "blocks/policy";
+@import "blocks/modals";
 
 @import "blocks/media";

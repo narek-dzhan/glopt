@@ -34,6 +34,13 @@
             column-gap: 10px;
         }
     }
+    .more {
+        &__wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
 }
 
 @media (max-width: 991px) {
@@ -83,9 +90,45 @@
             }
         }
     }
+    .title {
+        &_main {
+            font-size: 22px;
+        }
+        &_sub {
+            font-size: 18px;
+        }
+    }
+    .benefits {
+        padding: 60px 0;
+        &__wrapper {
+            grid-template: minmax(79px, auto) / minmax(auto, 533px);
+            gap: 35px 0;
+        }
+    }
+    .consultation {
+        &__form {
+            padding-bottom: 70px;
+        }
+        &__input {
+            flex-direction: column;
+            &-item {
+                margin-top: 15px;
+            }
+        }
+    }
+    .questions {
+        &__body {
+            padding: 18px 10px 0 10px;
+        }
+    }
+    .footer {
+        &__tagline {
+            display: none;
+        }
+    }
 }
 
-@media (max-width: 769px) {
+@media (max-width: 767px) {
     .container {
         max-width: 540px;
     }
@@ -181,11 +224,40 @@
             row-gap: 10px;
         }
     }
+    .feedback {
+        &__item, &__slider {
+            width: 500px;
+        }
+    }
+    .slick {
+        &-prev {
+            left: 130px;
+        }
+        &-next {
+            right: 130px;
+        }
+    }
+    .questions {
+        &__form {
+            grid-template: repeat(3, minmax(45px, auto)) minmax(71px, auto) / minmax(auto, 300px);
+            gap: 8px 0;
+            &-item {
+                &:nth-child(4) {
+                    grid-column: 1 / 2;
+                }
+            }
+        }
+        &__btn {
+            grid-column: 1;
+        }
+    }
 }
 
 @media (max-width: 575px) {
     .container {
         max-width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .header {
         &__logo {
@@ -196,7 +268,7 @@
             justify-content: space-around;
             margin-top: 20px;
             &-phone {
-                font-size: 17px;
+                font-size: 15px;
             }
             &-text {
                 text-align: center;
@@ -204,8 +276,6 @@
         }
     }
     .promo {
-        padding-left: 10px;
-        padding-right: 10px;
         &__wrapper {
             margin-top: 40px;
         }
@@ -235,5 +305,74 @@
         &__container {
             margin-top: 40px;
         }
+    }
+    .title {
+        &_main {
+            font-size: 20px;
+        }
+        &_sub {
+            font-size: 15px;
+        }
+    }
+    .benefits {
+        &__item {
+            grid-template: 65px minmax(79px, auto) / 1fr;
+            column-gap: 0;
+        }
+        &__icon {
+            justify-self: center;
+        }
+        &__descr {
+            &-title {
+                text-align: center;
+            }
+            &-text {
+                text-align: center;
+            }
+        }
+    }
+    .more {
+        &__descr {
+            width: 300px;
+        }
+        &__img {
+            width: 300px;
+        }
+    }
+    .agent {
+        &__descr {
+            font-size: 14px;
+        }
+    }
+    .managers {
+        &__descr {
+            font-size: 14px;
+        }
+    }
+    .feedback {
+        &__item, &__slider {
+            width: 300px;
+        }
+    }
+    .slick {
+        &-prev {
+            left: 30px;
+        }
+        &-next {
+            right: 30px;
+        }
+    }
+    .footer {
+        &__contacts {
+            grid-template-columns: auto;
+            grid-template-rows: repeat(2, 45px);
+            row-gap: 5px;
+            &-phone {
+                font-size: 16px;
+            }
+        }
+    }
+    .modal {
+        width: 300px;
     }
 }
